@@ -12,10 +12,37 @@
     <h1 id="title">Survey</h1>
     <p id="description">A Simple Survey Form</p>
     <form action="" id="survey-form">
-      <input type="text" id="name" required>
-      <input type="email" id="email" required >
-      <input type="number" min="5" max="5" id="number" required >
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" placeholder="Enter Name" required>
+      <label for="email" id="email-label">Email Address</label>
+      <input type="email" id="email" placeholder="Enter Email" required >
+      <label for="number" id="number-label">Number</label>
+      <input type="number" min="5" max="5" id="number" placeholder="Enter Number" required >
+
+      <section id="dropdown">
+        <option value="1" selected>One</option>
+        <option value="2" selected>Two</option>
+      </section>
       
+      <input type="radio" id="good" name="attendance" value="Good">
+      <label for="good">Good</label><br>
+      <input type="radio" id="average" name="attendance" value="Average">
+      <label for="average">Average</label><br>
+      <input type="radio" id="bad" name="attendance" value="Bad">
+      <label for="bad">Bad</label>
+
+      <input type="checkbox" id="good" name="performance" value="Good">
+      <label for="good">Good</label><br>
+      <input type="checkbox" id="average" name="performance" value="Average">
+      <label for="average">Average</label><br>
+      <input type="checkbox" id="bad" name="performance" value="Bad">
+      <label for="bad">Bad</label>
+
+      <textarea>
+        This is a survey form textarea for
+      </textarea>
+
+      <button id="submit">Submit</button>
     </form>
     <script  src="js/index.js"></script>
   </body>
